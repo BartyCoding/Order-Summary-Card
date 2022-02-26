@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.card {
+    width: 90%;
+    max-width: 375px;
+    border-radius: 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px 5px hsla(0, 0%, 0%, 0.25);
+}
+
+.card-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-heading {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 2.25rem;
+    color: hsl(223, 47%, 23%)
+}
+
+.card-description {
+    color: hsl(224, 23%, 55%);
+    padding: 0 2rem;
+    margin-bottom: 1.5em;
+}
+
+.card-price-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    max-width: 80%;
+}
+
+.card-price-plan-image {
+    margin-right: 1rem;
+}
+
+.card-price-plan-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+}
+
+.card-price-plan-description h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-price-plan-description p {
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+}
+
+.card-price-plan-change {
+    padding: 0 1em;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+}
+
+.card-price-plan-change a {
+    transition: all 300ms;
+}
+
+.card-price-plan-change a:hover {
+    text-decoration: none;
+    color: hsl(245, 63%, 64%);
+}
+
+button {
+    display: block;
+    width: 85%;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1.25rem 0 0.1rem;
+    transition: background-color 300ms, color 300ms;
+}
+
+.card-proceed {
+    box-shadow: 0 10px 20px 5px hsla(0, 0%, 0%, 0.25);
+}
+
+.card-proceed:hover {
+    background-color: hsl(245, 63%, 64%);
+}
+
+.card-cancel {
+    margin-bottom: 1.5rem;
+    color:hsl(224, 23%, 55%);
+    background-color: transparent;
+}
+
+.card-cancel:hover {
+    color:hsl(223, 47%, 23%);
+}
+
+@media (max-width: 350px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .card-price-plan {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card-price-plan-image {
+        margin-bottom: 1rem;
+    }
+
+    .card-price-plan-description {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .card-price-plan-change {
+        margin: 0;
+    }
+}
